@@ -123,8 +123,6 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 
-export NPM_TOKEN="c263e60f-ed19-4d95-ae82-5166f59807aa"
-
 alias gitnp='git --no-pager'
 alias dc='docker-compose'
 alias ui="cd ~/go/src/github.com/goabstract/ui"
