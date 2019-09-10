@@ -129,3 +129,7 @@ alias ui="cd ~/go/src/github.com/goabstract/ui"
 alias ab="cd ~/go/src/github.com/goabstract/projects"
 alias lrt="ls -lrt"
 alias ohmyzsh="code ~/.oh-my-zsh -r"
+
+if [ -f ~/.zshrc.local ]; then
+  . ~/.zshrc.local
+fi
