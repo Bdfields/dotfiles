@@ -1,0 +1,42 @@
+{
+  // The number of spaces a tab is equal to. This setting is overridden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.tabSize": 2,
+  // Insert spaces when pressing Tab. This setting is overriden
+  // based on the file contents when `editor.detectIndentation` is true.
+  "editor.insertSpaces": true,
+  // When opening a file, `editor.tabSize` and `editor.insertSpaces`
+  // will be detected based on the file contents. Set to false to keep
+  // the values you've explicitly set, above.
+  "editor.detectIndentation": false,
+  "editor.minimap.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveTimeout": 10000,
+  "editor.fontLigatures": true,
+  "workbench.editor.enablePreview": true,
+  //"editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  //"editor.fontFamily": "Fira Mono for Powerline",
+  "editor.fontFamily": "Fira Code",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.renderWhitespace": "boundary",
+  "window.zoomLevel": -1,
+  "workbench.settings.editor": "json",
+  "workbench.colorTheme": "One Dark Pro",
+  // TERMINAL
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontFamily": "Go Mono for Powerline",
+  // GO
+  "go.testEnvFile": "/Users/brandonfields/go/src/github.com/goabstract/projects/.env.test",
+  "go.lintTool": "golangci-lint",
+  "go.inferGopath": true,
+  "breadcrumbs.enabled": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "ruby.lint": {
+    "rubocop": true
+  },
+  "ruby.format": false
+  // "go.testFlags": [
+  //   "-v"
+  // ]
+}
