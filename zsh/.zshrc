@@ -2,16 +2,16 @@
 export PATH=$HOME/bin:~/Library/Python/3.7/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/brandonfields/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 #export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
-export PKG_CONFIG_PATH="/usr/local/Cellar/sdl2/2.0.9_1/lib/pkgconfig/"
+# export PKG_CONFIG_PATH="/usr/local/Cellar/sdl2/2.0.9_1/lib/pkgconfig/"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="bfields-miloshadzic"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -76,7 +76,7 @@ plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -102,26 +102,26 @@ eval "$(rbenv init -)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Keypad
 # 0 . Enter
-bindkey -s "^[Op" "0"
-bindkey -s "^[Ol" "."
-bindkey -s "^[OM" "^M"
-# 1 2 3
-bindkey -s "^[Oq" "1"
-bindkey -s "^[Or" "2"
-bindkey -s "^[Os" "3"
-# 4 5 6
-bindkey -s "^[Ot" "4"
-bindkey -s "^[Ou" "5"
-bindkey -s "^[Ov" "6"
-# 7 8 9
-bindkey -s "^[Ow" "7"
-bindkey -s "^[Ox" "8"
-bindkey -s "^[Oy" "9"
-# + -  * /
-bindkey -s "^[Ok" "+"
-bindkey -s "^[Om" "-"
-bindkey -s "^[Oj" "*"
-bindkey -s "^[Oo" "/"
+# bindkey -s "^[Op" "0"
+# bindkey -s "^[Ol" "."
+# bindkey -s "^[OM" "^M"
+# # 1 2 3
+# bindkey -s "^[Oq" "1"
+# bindkey -s "^[Or" "2"
+# bindkey -s "^[Os" "3"
+# # 4 5 6
+# bindkey -s "^[Ot" "4"
+# bindkey -s "^[Ou" "5"
+# bindkey -s "^[Ov" "6"
+# # 7 8 9
+# bindkey -s "^[Ow" "7"
+# bindkey -s "^[Ox" "8"
+# bindkey -s "^[Oy" "9"
+# # + -  * /
+# bindkey -s "^[Ok" "+"
+# bindkey -s "^[Om" "-"
+# bindkey -s "^[Oj" "*"
+# bindkey -s "^[Oo" "/"
 
 alias gitnp='git --no-pager'
 alias dc='docker-compose'
