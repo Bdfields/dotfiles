@@ -1,8 +1,11 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:~/Library/Python/3.7/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:~/Library/Python/3.7/bin:/usr/local/bin:$HOME/jdks/jdk8u242-b08/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOCONNECT=false
 
 #export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 # export PKG_CONFIG_PATH="/usr/local/Cellar/sdl2/2.0.9_1/lib/pkgconfig/"
@@ -11,7 +14,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="bfields"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,7 +74,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -133,3 +136,9 @@ alias ohmyzsh="code ~/.oh-my-zsh -r"
 if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export JAVA_HOME="$HOME/jdks/jdk8u242-b08"
